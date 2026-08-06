@@ -26,22 +26,22 @@ rq2_wptr :- Write pointer signal synchronized to the rclk domain via 2 flipflop 
 interface asyncFifo_if #(parameter int DATA_W = 8, 
                       parameter int ADDR_W = 4)
 (
-    input  logic [(DATA_W-1):0] wdata,
-    input  logic winc, wclk, wrst_n, 
-    input  logic rinc, rclk, rrst_n,
+    input var logic [(DATA_W-1):0] wdata,
+    input var logic winc, wclk, wrst_n, 
+    input var logic rinc, rclk, rrst_n,
 
     output logic  [(DATA_W-1):0] rdata,
     output logic  wfull,
     output logic  rempty 
 );
 
-wire [(ADDR_W-1):0] waddr, raddr;
-wire [ADDR_W:0] wptr, rptr, wq2_rptr, rq2_wptr;
+logic [(ADDR_W-1):0] waddr, raddr;
+logic [ADDR_W:0] wptr, rptr, wq2_rptr, rq2_wptr;
 wire wclken;
 assign wclken = (winc & ~wfull);
 
 modport fifoMem (
-input wdata, waddr, raddr, wclk, wclken,
+input wdata, waddr, raddr, wclk, wclken, wfull,
 output rdata
 );
 

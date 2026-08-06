@@ -1,0 +1,1410 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/fifo_if
+=== Design Unit: work.asyncFifo_if
+=================================================================================
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      2         1         1    50.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /asyncFifo_test_top/fifo_if --
+
+  File RTL/asyncFifo_if.sv
+----------------Focused Expression View-----------------
+Line       41 Item    1  (winc & ~wfull)
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        winc         Y
+       wfull         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  winc_0                ~wfull                        
+  Row   2:          1  winc_1                ~wfull                        
+  Row   3:          1  wfull_0               winc                          
+  Row   4:    ***0***  wfull_1               winc                          
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/fifo_if --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_if.sv
+    41              1                         18     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/fifo_if
+=== Design Unit: work.asyncFifo_if
+=================================================================================
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      2         1         1    50.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /asyncFifo_test_top/dut/fifo_if --
+
+  File RTL/asyncFifo_if.sv
+----------------Focused Expression View-----------------
+Line       41 Item    1  (winc & ~wfull)
+Expression totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+        winc         Y
+       wfull         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  winc_0                ~wfull                        
+  Row   2:          1  winc_1                ~wfull                        
+  Row   3:          1  wfull_0               winc                          
+  Row   4:    ***0***  wfull_1               winc                          
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/fifo_if --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_if.sv
+    41              1                         18     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/sync_r2w
+=== Design Unit: work.asyncFifo_2FF
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /asyncFifo_test_top/dut/sync_r2w
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_2FF.sv
+------------------------------------IF Branch------------------------------------
+    22                                         6     Count coming in to IF
+    22              1                          2     
+    24              1                          4     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       5         5         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/sync_r2w --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_2FF.sv
+    21              1                          6     
+    23              1                          2     
+    25              1                          4     
+    28              1                          3     
+    28              2                          3     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/sync_w2r
+=== Design Unit: work.asyncFifo_2FF
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /asyncFifo_test_top/dut/sync_w2r
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_2FF.sv
+------------------------------------IF Branch------------------------------------
+    22                                        16     Count coming in to IF
+    22              1                          2     
+    24              1                         14     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       5         5         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/sync_w2r --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_2FF.sv
+    21              1                         16     
+    23              1                          2     
+    25              1                         14     
+    28              1                          8     
+    28              2                          8     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/fifo_mem
+=== Design Unit: work.asyncFifo_mem
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /asyncFifo_test_top/dut/fifo_mem
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_mem.sv
+------------------------------------IF Branch------------------------------------
+    23                                        16     Count coming in to IF
+    23              1                          8     
+                                               8     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         1         1    50.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /asyncFifo_test_top/dut/fifo_mem --
+
+  File RTL/asyncFifo_mem.sv
+----------------Focused Condition View-------------------
+Line       23 Item    1  (f.wclken && ~f.wfull)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+    f.wclken         Y
+     f.wfull         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  f.wclken_0            -                             
+  Row   2:          1  f.wclken_1            ~f.wfull                      
+  Row   3:          1  f.wfull_0             f.wclken                      
+  Row   4:    ***0***  f.wfull_1             f.wclken                      
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       3         3         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/fifo_mem --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_mem.sv
+    20              1                         11     
+    22              1                         16     
+    24              1                          8     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/fifo_rptr_empty
+=== Design Unit: work.asyncFifo_rptr_empty
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         4         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /asyncFifo_test_top/dut/fifo_rptr_empty
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_rptr_empty.sv
+------------------------------------IF Branch------------------------------------
+    22                                        35     Count coming in to IF
+    22              1                          2     
+    23              1                         33     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                        35     Count coming in to IF
+    35              1                          2     
+    36              1                         33     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      1         1         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /asyncFifo_test_top/dut/fifo_rptr_empty --
+
+  File RTL/asyncFifo_rptr_empty.sv
+----------------Focused Expression View-----------------
+Line       32 Item    1  (rgray_next == f.rq2_wptr)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10        10         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/fifo_rptr_empty --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_rptr_empty.sv
+    21              1                         35     
+    22              1                          2     
+    23              1                         33     
+    26              1                          3     
+    28              1                          8     
+    29              1                          5     
+    32              1                         12     
+    34              1                         35     
+    35              1                          2     
+    36              1                         33     
+
+=================================================================================
+=== Instance: /asyncFifo_test_top/dut/fifo_wptr_full
+=== Design Unit: work.asyncFifo_wptr_full
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         4         4         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /asyncFifo_test_top/dut/fifo_wptr_full
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_wptr_full.sv
+------------------------------------IF Branch------------------------------------
+    23                                        49     Count coming in to IF
+    23              1                          3     
+    24              1                         46     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    38                                        49     Count coming in to IF
+    38              1                          3     
+    39              1                         46     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      1         0         1     0.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /asyncFifo_test_top/dut/fifo_wptr_full --
+
+  File RTL/asyncFifo_wptr_full.sv
+----------------Focused Expression View-----------------
+Line       35 Item    1  (wgraynext == {~f.wq2_rptr[4:3],f.wq2_rptr[2:0]})
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                                         Input Term   Covered  Reason for no coverage   Hint
+                                        -----------  --------  -----------------------  --------------
+  (wgraynext == {~f.wq2_rptr[4:3],f.wq2_rptr[2:0]})         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                           Non-masking condition(s)      
+ ---------  ---------  --------------------                                 -------------------------     
+  Row   1:          1  (wgraynext == {~f.wq2_rptr[4:3],f.wq2_rptr[2:0]})_0  -                             
+  Row   2:    ***0***  (wgraynext == {~f.wq2_rptr[4:3],f.wq2_rptr[2:0]})_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10        10         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /asyncFifo_test_top/dut/fifo_wptr_full --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File RTL/asyncFifo_wptr_full.sv
+    22              1                         49     
+    23              1                          3     
+    24              1                         46     
+    28              1                          9     
+    30              1                         25     
+    31              1                         24     
+    35              1                         26     
+    37              1                         49     
+    38              1                          3     
+    39              1                         46     
+
+=================================================================================
+=== Instance: /fp
+=== Design Unit: work.fp
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       108        45        63    41.66%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fp
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File TB/asyncFifo_packet.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                          9     Count coming in to IF
+    5               2                    ***0***     
+                                               9     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+    5               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                          9     Count coming in to IF
+    5               5                    ***0***     
+                                               9     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    33                                        20     Count coming in to IF
+    33              1                         20     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_sequence.sv
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               3                    ***0***     
+    5               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    5                                    ***0***     Count coming in to IF
+    5               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    13                                         1     Count coming in to IF
+    13              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                        10     Count coming in to IF
+    24              1                    ***0***     
+                                              10     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                   ***0***     Count coming in to IF
+    25              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                        10     Count coming in to IF
+    27              1                         10     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_sequencer.sv
+------------------------------------IF Branch------------------------------------
+    8                                          1     Count coming in to IF
+    8               1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    16                                         1     Count coming in to IF
+    16              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                         1     Count coming in to IF
+    24              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_driver.sv
+------------------------------------IF Branch------------------------------------
+    12                                         1     Count coming in to IF
+    12              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    17                                         1     Count coming in to IF
+    17              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    19                                         1     Count coming in to IF
+    19              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                   ***0***     Count coming in to IF
+    20              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    29                                        10     Count coming in to IF
+    29              1                          8     
+    40              1                          2     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+  File TB/asyncFifo_monitor.sv
+------------------------------------IF Branch------------------------------------
+    14                                         1     Count coming in to IF
+    14              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    19                                         1     Count coming in to IF
+    19              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                         1     Count coming in to IF
+    28              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    29                                   ***0***     Count coming in to IF
+    29              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                         1     Count coming in to IF
+    35              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    40                                         1     Count coming in to IF
+    40              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    48                                        48     Count coming in to IF
+    48              1                          8     
+                                              40     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                        34     Count coming in to IF
+    61              1                          1     
+                                              33     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+  File TB/asyncFifo_agent.sv
+------------------------------------IF Branch------------------------------------
+    14                                         1     Count coming in to IF
+    14              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    16                                         1     Count coming in to IF
+    16              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    25                                         1     Count coming in to IF
+    25              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                         1     Count coming in to IF
+    26              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    14                                         1     Count coming in to IF
+    14              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                         1     Count coming in to IF
+    20              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                         1     Count coming in to IF
+    27              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    36                                         1     Count coming in to IF
+    36              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    51                                         9     Count coming in to IF
+    51              1                          8     
+    55              1                          1     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                         8     Count coming in to IF
+    53              1                          8     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                         1     Count coming in to IF
+    56              1                    ***0***     
+    59              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    57                                   ***0***     Count coming in to IF
+    57              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    63                                         1     Count coming in to IF
+    63              1                          1     
+    65              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                         1     Count coming in to IF
+    64              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    66                                   ***0***     Count coming in to IF
+    66              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File TB/asyncFifo_coverage.sv
+------------------------------------IF Branch------------------------------------
+    36                                         9     Count coming in to IF
+    36              1                          9     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_environment.sv
+------------------------------------IF Branch------------------------------------
+    10                                         1     Count coming in to IF
+    10              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    15                                         1     Count coming in to IF
+    15              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                         1     Count coming in to IF
+    24              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File TB/asyncFifo_test.sv
+------------------------------------IF Branch------------------------------------
+    12                                         1     Count coming in to IF
+    12              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    17                                         1     Count coming in to IF
+    17              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                         1     Count coming in to IF
+    24              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    29                                         1     Count coming in to IF
+    29              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      12         5         7    41.66%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fp --
+
+  File TB/asyncFifo_packet.sv
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       5 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       5 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       29 Item    1  (this.req.op == WR)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+----------------Focused Condition View-------------------
+Line       48 Item    1  (this.vif.winc && ~this.vif.wfull)
+Condition totals: 1 of 2 input terms covered = 50.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+   this.vif.winc         Y
+  this.vif.wfull         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  this.vif.winc_0       -                             
+  Row   2:          1  this.vif.winc_1       ~this.vif.wfull               
+  Row   3:          1  this.vif.wfull_0      this.vif.winc                 
+  Row   4:    ***0***  this.vif.wfull_1      this.vif.winc                 
+
+----------------Focused Condition View-------------------
+Line       61 Item    1  (this.vif.rinc && ~this.vif.rempty)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+
+----------------Focused Condition View-------------------
+Line       51 Item    1  (curr_trans.op == WR)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       56 Item    1  (size(this.golden_q) == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+  (size(this.golden_q) == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:          1  (size(this.golden_q) == 0)_0  -                             
+  Row   2:    ***0***  (size(this.golden_q) == 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       63 Item    1  (actual_data != expected_data)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+  (actual_data != expected_data)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:    ***0***  (actual_data != expected_data)_0  -                             
+  Row   2:          1  (actual_data != expected_data)_1  -                             
+
+
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    50.52%
+        Coverpoints/Crosses          6        na        na        na
+            Covergroup Bins        202        10       192     4.95%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fp/asyncFifo_coverage/cg                        50.52%        100          -    Uncovered            
+    covered/total bins:                                    10        202          -                      
+    missing/total bins:                                   192        202          -                      
+    % Hit:                                              4.95%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin opRD                                            1          1          -    Covered              
+        bin opWR                                            8          1          -    Covered              
+    Coverpoint #coverpoint__1#                         33.33%        100          -    Uncovered            
+        covered/total bins:                                 1          3          -                      
+        missing/total bins:                                 2          3          -                      
+        % Hit:                                         33.33%        100          -                      
+        bin opidleCycles                                    9          1          -    Covered              
+        bin opidleCycles1                                   0          1          -    ZERO                 
+        bin opidleCycles2                                   0          1          -    ZERO                 
+    Coverpoint #coverpoint__2#                         66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin data0                                           3          1          -    Covered              
+        bin data1                                           0          1          -    ZERO                 
+        bin data2                                           6          1          -    Covered              
+    Coverpoint #pkt.op__3#                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[WR]                                        8          1          -    Covered              
+        bin auto[RD]                                        1          1          -    Covered              
+    Coverpoint #pkt.idleCycles__4#                      1.56%        100          -    Uncovered            
+        covered/total bins:                                 1         64          -                      
+        missing/total bins:                                63         64          -                      
+        % Hit:                                          1.56%        100          -                      
+        bin auto[0:67108863]                                9          1          -    Covered              
+        bin auto[67108864:134217727]                        0          1          -    ZERO                 
+        bin auto[134217728:201326591]                       0          1          -    ZERO                 
+        bin auto[201326592:268435455]                       0          1          -    ZERO                 
+        bin auto[268435456:335544319]                       0          1          -    ZERO                 
+        bin auto[335544320:402653183]                       0          1          -    ZERO                 
+        bin auto[402653184:469762047]                       0          1          -    ZERO                 
+        bin auto[469762048:536870911]                       0          1          -    ZERO                 
+        bin auto[536870912:603979775]                       0          1          -    ZERO                 
+        bin auto[603979776:671088639]                       0          1          -    ZERO                 
+        bin auto[671088640:738197503]                       0          1          -    ZERO                 
+        bin auto[738197504:805306367]                       0          1          -    ZERO                 
+        bin auto[805306368:872415231]                       0          1          -    ZERO                 
+        bin auto[872415232:939524095]                       0          1          -    ZERO                 
+        bin auto[939524096:1006632959]                      0          1          -    ZERO                 
+        bin auto[1006632960:1073741823]                     0          1          -    ZERO                 
+        bin auto[1073741824:1140850687]                     0          1          -    ZERO                 
+        bin auto[1140850688:1207959551]                     0          1          -    ZERO                 
+        bin auto[1207959552:1275068415]                     0          1          -    ZERO                 
+        bin auto[1275068416:1342177279]                     0          1          -    ZERO                 
+        bin auto[1342177280:1409286143]                     0          1          -    ZERO                 
+        bin auto[1409286144:1476395007]                     0          1          -    ZERO                 
+        bin auto[1476395008:1543503871]                     0          1          -    ZERO                 
+        bin auto[1543503872:1610612735]                     0          1          -    ZERO                 
+        bin auto[1610612736:1677721599]                     0          1          -    ZERO                 
+        bin auto[1677721600:1744830463]                     0          1          -    ZERO                 
+        bin auto[1744830464:1811939327]                     0          1          -    ZERO                 
+        bin auto[1811939328:1879048191]                     0          1          -    ZERO                 
+        bin auto[1879048192:1946157055]                     0          1          -    ZERO                 
+        bin auto[1946157056:2013265919]                     0          1          -    ZERO                 
+        bin auto[2013265920:2080374783]                     0          1          -    ZERO                 
+        bin auto[2080374784:2147483647]                     0          1          -    ZERO                 
+        bin auto[2147483648:2214592511]                     0          1          -    ZERO                 
+        bin auto[2214592512:2281701375]                     0          1          -    ZERO                 
+        bin auto[2281701376:2348810239]                     0          1          -    ZERO                 
+        bin auto[2348810240:2415919103]                     0          1          -    ZERO                 
+        bin auto[2415919104:2483027967]                     0          1          -    ZERO                 
+        bin auto[2483027968:2550136831]                     0          1          -    ZERO                 
+        bin auto[2550136832:2617245695]                     0          1          -    ZERO                 
+        bin auto[2617245696:2684354559]                     0          1          -    ZERO                 
+        bin auto[2684354560:2751463423]                     0          1          -    ZERO                 
+        bin auto[2751463424:2818572287]                     0          1          -    ZERO                 
+        bin auto[2818572288:2885681151]                     0          1          -    ZERO                 
+        bin auto[2885681152:2952790015]                     0          1          -    ZERO                 
+        bin auto[2952790016:3019898879]                     0          1          -    ZERO                 
+        bin auto[3019898880:3087007743]                     0          1          -    ZERO                 
+        bin auto[3087007744:3154116607]                     0          1          -    ZERO                 
+        bin auto[3154116608:3221225471]                     0          1          -    ZERO                 
+        bin auto[3221225472:3288334335]                     0          1          -    ZERO                 
+        bin auto[3288334336:3355443199]                     0          1          -    ZERO                 
+        bin auto[3355443200:3422552063]                     0          1          -    ZERO                 
+        bin auto[3422552064:3489660927]                     0          1          -    ZERO                 
+        bin auto[3489660928:3556769791]                     0          1          -    ZERO                 
+        bin auto[3556769792:3623878655]                     0          1          -    ZERO                 
+        bin auto[3623878656:3690987519]                     0          1          -    ZERO                 
+        bin auto[3690987520:3758096383]                     0          1          -    ZERO                 
+        bin auto[3758096384:3825205247]                     0          1          -    ZERO                 
+        bin auto[3825205248:3892314111]                     0          1          -    ZERO                 
+        bin auto[3892314112:3959422975]                     0          1          -    ZERO                 
+        bin auto[3959422976:4026531839]                     0          1          -    ZERO                 
+        bin auto[4026531840:4093640703]                     0          1          -    ZERO                 
+        bin auto[4093640704:4160749567]                     0          1          -    ZERO                 
+        bin auto[4160749568:4227858431]                     0          1          -    ZERO                 
+        bin auto[4227858432:4294967295]                     0          1          -    ZERO                 
+    Cross IO_cross                                      1.56%        100          -    Uncovered            
+        covered/total bins:                                 2        128          -                      
+        missing/total bins:                               126        128          -                      
+        % Hit:                                          1.56%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[RD],auto[0:67108863]>                 1          1          -    Covered              
+            bin <auto[WR],auto[0:67108863]>                 8          1          -    Covered              
+            bin <*,auto[4227858432:4294967295]>             0          1          2    ZERO                 
+            bin <*,auto[4160749568:4227858431]>             0          1          2    ZERO                 
+            bin <*,auto[4093640704:4160749567]>             0          1          2    ZERO                 
+            bin <*,auto[4026531840:4093640703]>             0          1          2    ZERO                 
+            bin <*,auto[3959422976:4026531839]>             0          1          2    ZERO                 
+            bin <*,auto[3892314112:3959422975]>             0          1          2    ZERO                 
+            bin <*,auto[3825205248:3892314111]>             0          1          2    ZERO                 
+            bin <*,auto[3758096384:3825205247]>             0          1          2    ZERO                 
+            bin <*,auto[3690987520:3758096383]>             0          1          2    ZERO                 
+            bin <*,auto[3623878656:3690987519]>             0          1          2    ZERO                 
+            bin <*,auto[3556769792:3623878655]>             0          1          2    ZERO                 
+            bin <*,auto[3489660928:3556769791]>             0          1          2    ZERO                 
+            bin <*,auto[3422552064:3489660927]>             0          1          2    ZERO                 
+            bin <*,auto[3355443200:3422552063]>             0          1          2    ZERO                 
+            bin <*,auto[3288334336:3355443199]>             0          1          2    ZERO                 
+            bin <*,auto[3221225472:3288334335]>             0          1          2    ZERO                 
+            bin <*,auto[3154116608:3221225471]>             0          1          2    ZERO                 
+            bin <*,auto[3087007744:3154116607]>             0          1          2    ZERO                 
+            bin <*,auto[3019898880:3087007743]>             0          1          2    ZERO                 
+            bin <*,auto[2952790016:3019898879]>             0          1          2    ZERO                 
+            bin <*,auto[2885681152:2952790015]>             0          1          2    ZERO                 
+            bin <*,auto[2818572288:2885681151]>             0          1          2    ZERO                 
+            bin <*,auto[2751463424:2818572287]>             0          1          2    ZERO                 
+            bin <*,auto[2684354560:2751463423]>             0          1          2    ZERO                 
+            bin <*,auto[2617245696:2684354559]>             0          1          2    ZERO                 
+            bin <*,auto[2550136832:2617245695]>             0          1          2    ZERO                 
+            bin <*,auto[2483027968:2550136831]>             0          1          2    ZERO                 
+            bin <*,auto[2415919104:2483027967]>             0          1          2    ZERO                 
+            bin <*,auto[2348810240:2415919103]>             0          1          2    ZERO                 
+            bin <*,auto[2281701376:2348810239]>             0          1          2    ZERO                 
+            bin <*,auto[2214592512:2281701375]>             0          1          2    ZERO                 
+            bin <*,auto[2147483648:2214592511]>             0          1          2    ZERO                 
+            bin <*,auto[2080374784:2147483647]>             0          1          2    ZERO                 
+            bin <*,auto[2013265920:2080374783]>             0          1          2    ZERO                 
+            bin <*,auto[1946157056:2013265919]>             0          1          2    ZERO                 
+            bin <*,auto[1879048192:1946157055]>             0          1          2    ZERO                 
+            bin <*,auto[1811939328:1879048191]>             0          1          2    ZERO                 
+            bin <*,auto[1744830464:1811939327]>             0          1          2    ZERO                 
+            bin <*,auto[1677721600:1744830463]>             0          1          2    ZERO                 
+            bin <*,auto[1610612736:1677721599]>             0          1          2    ZERO                 
+            bin <*,auto[1543503872:1610612735]>             0          1          2    ZERO                 
+            bin <*,auto[1476395008:1543503871]>             0          1          2    ZERO                 
+            bin <*,auto[1409286144:1476395007]>             0          1          2    ZERO                 
+            bin <*,auto[1342177280:1409286143]>             0          1          2    ZERO                 
+            bin <*,auto[1275068416:1342177279]>             0          1          2    ZERO                 
+            bin <*,auto[1207959552:1275068415]>             0          1          2    ZERO                 
+            bin <*,auto[1140850688:1207959551]>             0          1          2    ZERO                 
+            bin <*,auto[1073741824:1140850687]>             0          1          2    ZERO                 
+            bin <*,auto[1006632960:1073741823]>             0          1          2    ZERO                 
+            bin <*,auto[939524096:1006632959]>              0          1          2    ZERO                 
+            bin <*,auto[872415232:939524095]>               0          1          2    ZERO                 
+            bin <*,auto[805306368:872415231]>               0          1          2    ZERO                 
+            bin <*,auto[738197504:805306367]>               0          1          2    ZERO                 
+            bin <*,auto[671088640:738197503]>               0          1          2    ZERO                 
+            bin <*,auto[603979776:671088639]>               0          1          2    ZERO                 
+            bin <*,auto[536870912:603979775]>               0          1          2    ZERO                 
+            bin <*,auto[469762048:536870911]>               0          1          2    ZERO                 
+            bin <*,auto[402653184:469762047]>               0          1          2    ZERO                 
+            bin <*,auto[335544320:402653183]>               0          1          2    ZERO                 
+            bin <*,auto[268435456:335544319]>               0          1          2    ZERO                 
+            bin <*,auto[201326592:268435455]>               0          1          2    ZERO                 
+            bin <*,auto[134217728:201326591]>               0          1          2    ZERO                 
+            bin <*,auto[67108864:134217727]>                0          1          2    ZERO                 
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     165       127        38    76.96%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fp --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File TB/asyncFifo_packet.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                         19     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                          9     
+    5              10                    ***0***     
+    32              1                         20     
+    33              1                         20     
+  File TB/asyncFifo_sequence.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                    ***0***     
+    5               4                    ***0***     
+    5               5                    ***0***     
+    5               6                          1     
+    5               7                    ***0***     
+    5               8                    ***0***     
+    5               9                    ***0***     
+    5              10                    ***0***     
+    12              1                          1     
+    13              1                          1     
+    19              1                         10     
+    21              1                         10     
+    22              1                         10     
+    25              1                    ***0***     
+    27              1                         10     
+    28              1                         10     
+  File TB/asyncFifo_sequencer.sv
+    3               1                    ***0***     
+    3               2                    ***0***     
+    3               3                          1     
+    7               1                          1     
+    8               1                          1     
+    15              1                          1     
+    16              1                          1     
+    23              1                          1     
+    24              1                          1     
+  File TB/asyncFifo_driver.sv
+    4               1                    ***0***     
+    4               2                    ***0***     
+    4               3                          1     
+    11              1                          1     
+    12              1                          1     
+    16              1                          1     
+    17              1                          1     
+    20              1                    ***0***     
+    25              1                          1     
+    27              1                          1     
+    28              1                         11     
+    30              1                         17     
+    30              2                         17     
+    32              1                          8     
+    33              1                          8     
+    34              1                          8     
+    37              1                          8     
+    38              1                          8     
+    41              1                          8     
+    41              2                          8     
+    43              1                          2     
+    44              1                          2     
+    46              1                          2     
+    47              1                          2     
+    51              1                         10     
+  File TB/asyncFifo_monitor.sv
+    4               1                    ***0***     
+    4               2                    ***0***     
+    4               3                          1     
+    13              1                          1     
+    14              1                          1     
+    18              1                          1     
+    19              1                          1     
+    26              1                          1     
+    29              1                    ***0***     
+    34              1                          1     
+    35              1                          1     
+    39              1                          1     
+    40              1                          1     
+    45              1                          1     
+    46              1                         49     
+    50              1                          8     
+    51              1                          8     
+    52              1                          8     
+    53              1                          8     
+    58              1                          1     
+    59              1                         35     
+    63              1                          1     
+    64              1                          1     
+    65              1                          1     
+    66              1                          1     
+  File TB/asyncFifo_agent.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                          1     
+    9               1                          1     
+    13              1                          1     
+    14              1                          1     
+    17              1                          1     
+    18              1                          1     
+    20              1                          1     
+    24              1                          1     
+    25              1                          1     
+    27              1                          1     
+    31              1                          1     
+  File TB/asyncFifo_scoreboard.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                          1     
+    13              1                          1     
+    14              1                          1     
+    19              1                          1     
+    20              1                          1     
+    22              1                          1     
+    26              1                          1     
+    27              1                          1     
+    31              1                          9     
+    35              1                          1     
+    36              1                          1     
+    38              1                          1     
+    41              1                         10     
+    42              1                          9     
+    43              1                          9     
+    52              1                          8     
+    53              1                          8     
+    57              1                    ***0***     
+    60              1                          1     
+    61              1                          1     
+    64              1                          1     
+    66              1                    ***0***     
+  File TB/asyncFifo_coverage.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                         19     
+    29              1                          1     
+    31              1                          1     
+    32              1                          1     
+    36              1                          9     
+    37              1                          9     
+    39              1                          9     
+    41              1                          9     
+    42              1                          9     
+  File TB/asyncFifo_environment.sv
+    2               1                    ***0***     
+    2               2                    ***0***     
+    2               3                          1     
+    9               1                          1     
+    10              1                          1     
+    14              1                          1     
+    15              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    23              1                          1     
+    24              1                          1     
+    26              1                          1     
+    27              1                          1     
+  File TB/asyncFifo_test.sv
+    5               1                    ***0***     
+    5               2                    ***0***     
+    5               3                          2     
+    11              1                          1     
+    12              1                          1     
+    16              1                          1     
+    17              1                          1     
+    19              1                          1     
+    23              1                          1     
+    24              1                          1     
+    26              1                          1     
+    27              1                          1     
+    29              1                          1     
+    30              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fp/asyncFifo_coverage/cg                        50.52%        100          -    Uncovered            
+    covered/total bins:                                    10        202          -                      
+    missing/total bins:                                   192        202          -                      
+    % Hit:                                              4.95%        100          -                      
+    Coverpoint #coverpoint__0#                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin opRD                                            1          1          -    Covered              
+        bin opWR                                            8          1          -    Covered              
+    Coverpoint #coverpoint__1#                         33.33%        100          -    Uncovered            
+        covered/total bins:                                 1          3          -                      
+        missing/total bins:                                 2          3          -                      
+        % Hit:                                         33.33%        100          -                      
+        bin opidleCycles                                    9          1          -    Covered              
+        bin opidleCycles1                                   0          1          -    ZERO                 
+        bin opidleCycles2                                   0          1          -    ZERO                 
+    Coverpoint #coverpoint__2#                         66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin data0                                           3          1          -    Covered              
+        bin data1                                           0          1          -    ZERO                 
+        bin data2                                           6          1          -    Covered              
+    Coverpoint #pkt.op__3#                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[WR]                                        8          1          -    Covered              
+        bin auto[RD]                                        1          1          -    Covered              
+    Coverpoint #pkt.idleCycles__4#                      1.56%        100          -    Uncovered            
+        covered/total bins:                                 1         64          -                      
+        missing/total bins:                                63         64          -                      
+        % Hit:                                          1.56%        100          -                      
+        bin auto[0:67108863]                                9          1          -    Covered              
+        bin auto[67108864:134217727]                        0          1          -    ZERO                 
+        bin auto[134217728:201326591]                       0          1          -    ZERO                 
+        bin auto[201326592:268435455]                       0          1          -    ZERO                 
+        bin auto[268435456:335544319]                       0          1          -    ZERO                 
+        bin auto[335544320:402653183]                       0          1          -    ZERO                 
+        bin auto[402653184:469762047]                       0          1          -    ZERO                 
+        bin auto[469762048:536870911]                       0          1          -    ZERO                 
+        bin auto[536870912:603979775]                       0          1          -    ZERO                 
+        bin auto[603979776:671088639]                       0          1          -    ZERO                 
+        bin auto[671088640:738197503]                       0          1          -    ZERO                 
+        bin auto[738197504:805306367]                       0          1          -    ZERO                 
+        bin auto[805306368:872415231]                       0          1          -    ZERO                 
+        bin auto[872415232:939524095]                       0          1          -    ZERO                 
+        bin auto[939524096:1006632959]                      0          1          -    ZERO                 
+        bin auto[1006632960:1073741823]                     0          1          -    ZERO                 
+        bin auto[1073741824:1140850687]                     0          1          -    ZERO                 
+        bin auto[1140850688:1207959551]                     0          1          -    ZERO                 
+        bin auto[1207959552:1275068415]                     0          1          -    ZERO                 
+        bin auto[1275068416:1342177279]                     0          1          -    ZERO                 
+        bin auto[1342177280:1409286143]                     0          1          -    ZERO                 
+        bin auto[1409286144:1476395007]                     0          1          -    ZERO                 
+        bin auto[1476395008:1543503871]                     0          1          -    ZERO                 
+        bin auto[1543503872:1610612735]                     0          1          -    ZERO                 
+        bin auto[1610612736:1677721599]                     0          1          -    ZERO                 
+        bin auto[1677721600:1744830463]                     0          1          -    ZERO                 
+        bin auto[1744830464:1811939327]                     0          1          -    ZERO                 
+        bin auto[1811939328:1879048191]                     0          1          -    ZERO                 
+        bin auto[1879048192:1946157055]                     0          1          -    ZERO                 
+        bin auto[1946157056:2013265919]                     0          1          -    ZERO                 
+        bin auto[2013265920:2080374783]                     0          1          -    ZERO                 
+        bin auto[2080374784:2147483647]                     0          1          -    ZERO                 
+        bin auto[2147483648:2214592511]                     0          1          -    ZERO                 
+        bin auto[2214592512:2281701375]                     0          1          -    ZERO                 
+        bin auto[2281701376:2348810239]                     0          1          -    ZERO                 
+        bin auto[2348810240:2415919103]                     0          1          -    ZERO                 
+        bin auto[2415919104:2483027967]                     0          1          -    ZERO                 
+        bin auto[2483027968:2550136831]                     0          1          -    ZERO                 
+        bin auto[2550136832:2617245695]                     0          1          -    ZERO                 
+        bin auto[2617245696:2684354559]                     0          1          -    ZERO                 
+        bin auto[2684354560:2751463423]                     0          1          -    ZERO                 
+        bin auto[2751463424:2818572287]                     0          1          -    ZERO                 
+        bin auto[2818572288:2885681151]                     0          1          -    ZERO                 
+        bin auto[2885681152:2952790015]                     0          1          -    ZERO                 
+        bin auto[2952790016:3019898879]                     0          1          -    ZERO                 
+        bin auto[3019898880:3087007743]                     0          1          -    ZERO                 
+        bin auto[3087007744:3154116607]                     0          1          -    ZERO                 
+        bin auto[3154116608:3221225471]                     0          1          -    ZERO                 
+        bin auto[3221225472:3288334335]                     0          1          -    ZERO                 
+        bin auto[3288334336:3355443199]                     0          1          -    ZERO                 
+        bin auto[3355443200:3422552063]                     0          1          -    ZERO                 
+        bin auto[3422552064:3489660927]                     0          1          -    ZERO                 
+        bin auto[3489660928:3556769791]                     0          1          -    ZERO                 
+        bin auto[3556769792:3623878655]                     0          1          -    ZERO                 
+        bin auto[3623878656:3690987519]                     0          1          -    ZERO                 
+        bin auto[3690987520:3758096383]                     0          1          -    ZERO                 
+        bin auto[3758096384:3825205247]                     0          1          -    ZERO                 
+        bin auto[3825205248:3892314111]                     0          1          -    ZERO                 
+        bin auto[3892314112:3959422975]                     0          1          -    ZERO                 
+        bin auto[3959422976:4026531839]                     0          1          -    ZERO                 
+        bin auto[4026531840:4093640703]                     0          1          -    ZERO                 
+        bin auto[4093640704:4160749567]                     0          1          -    ZERO                 
+        bin auto[4160749568:4227858431]                     0          1          -    ZERO                 
+        bin auto[4227858432:4294967295]                     0          1          -    ZERO                 
+    Cross IO_cross                                      1.56%        100          -    Uncovered            
+        covered/total bins:                                 2        128          -                      
+        missing/total bins:                               126        128          -                      
+        % Hit:                                          1.56%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[RD],auto[0:67108863]>                 1          1          -    Covered              
+            bin <auto[WR],auto[0:67108863]>                 8          1          -    Covered              
+            bin <*,auto[4227858432:4294967295]>             0          1          2    ZERO                 
+            bin <*,auto[4160749568:4227858431]>             0          1          2    ZERO                 
+            bin <*,auto[4093640704:4160749567]>             0          1          2    ZERO                 
+            bin <*,auto[4026531840:4093640703]>             0          1          2    ZERO                 
+            bin <*,auto[3959422976:4026531839]>             0          1          2    ZERO                 
+            bin <*,auto[3892314112:3959422975]>             0          1          2    ZERO                 
+            bin <*,auto[3825205248:3892314111]>             0          1          2    ZERO                 
+            bin <*,auto[3758096384:3825205247]>             0          1          2    ZERO                 
+            bin <*,auto[3690987520:3758096383]>             0          1          2    ZERO                 
+            bin <*,auto[3623878656:3690987519]>             0          1          2    ZERO                 
+            bin <*,auto[3556769792:3623878655]>             0          1          2    ZERO                 
+            bin <*,auto[3489660928:3556769791]>             0          1          2    ZERO                 
+            bin <*,auto[3422552064:3489660927]>             0          1          2    ZERO                 
+            bin <*,auto[3355443200:3422552063]>             0          1          2    ZERO                 
+            bin <*,auto[3288334336:3355443199]>             0          1          2    ZERO                 
+            bin <*,auto[3221225472:3288334335]>             0          1          2    ZERO                 
+            bin <*,auto[3154116608:3221225471]>             0          1          2    ZERO                 
+            bin <*,auto[3087007744:3154116607]>             0          1          2    ZERO                 
+            bin <*,auto[3019898880:3087007743]>             0          1          2    ZERO                 
+            bin <*,auto[2952790016:3019898879]>             0          1          2    ZERO                 
+            bin <*,auto[2885681152:2952790015]>             0          1          2    ZERO                 
+            bin <*,auto[2818572288:2885681151]>             0          1          2    ZERO                 
+            bin <*,auto[2751463424:2818572287]>             0          1          2    ZERO                 
+            bin <*,auto[2684354560:2751463423]>             0          1          2    ZERO                 
+            bin <*,auto[2617245696:2684354559]>             0          1          2    ZERO                 
+            bin <*,auto[2550136832:2617245695]>             0          1          2    ZERO                 
+            bin <*,auto[2483027968:2550136831]>             0          1          2    ZERO                 
+            bin <*,auto[2415919104:2483027967]>             0          1          2    ZERO                 
+            bin <*,auto[2348810240:2415919103]>             0          1          2    ZERO                 
+            bin <*,auto[2281701376:2348810239]>             0          1          2    ZERO                 
+            bin <*,auto[2214592512:2281701375]>             0          1          2    ZERO                 
+            bin <*,auto[2147483648:2214592511]>             0          1          2    ZERO                 
+            bin <*,auto[2080374784:2147483647]>             0          1          2    ZERO                 
+            bin <*,auto[2013265920:2080374783]>             0          1          2    ZERO                 
+            bin <*,auto[1946157056:2013265919]>             0          1          2    ZERO                 
+            bin <*,auto[1879048192:1946157055]>             0          1          2    ZERO                 
+            bin <*,auto[1811939328:1879048191]>             0          1          2    ZERO                 
+            bin <*,auto[1744830464:1811939327]>             0          1          2    ZERO                 
+            bin <*,auto[1677721600:1744830463]>             0          1          2    ZERO                 
+            bin <*,auto[1610612736:1677721599]>             0          1          2    ZERO                 
+            bin <*,auto[1543503872:1610612735]>             0          1          2    ZERO                 
+            bin <*,auto[1476395008:1543503871]>             0          1          2    ZERO                 
+            bin <*,auto[1409286144:1476395007]>             0          1          2    ZERO                 
+            bin <*,auto[1342177280:1409286143]>             0          1          2    ZERO                 
+            bin <*,auto[1275068416:1342177279]>             0          1          2    ZERO                 
+            bin <*,auto[1207959552:1275068415]>             0          1          2    ZERO                 
+            bin <*,auto[1140850688:1207959551]>             0          1          2    ZERO                 
+            bin <*,auto[1073741824:1140850687]>             0          1          2    ZERO                 
+            bin <*,auto[1006632960:1073741823]>             0          1          2    ZERO                 
+            bin <*,auto[939524096:1006632959]>              0          1          2    ZERO                 
+            bin <*,auto[872415232:939524095]>               0          1          2    ZERO                 
+            bin <*,auto[805306368:872415231]>               0          1          2    ZERO                 
+            bin <*,auto[738197504:805306367]>               0          1          2    ZERO                 
+            bin <*,auto[671088640:738197503]>               0          1          2    ZERO                 
+            bin <*,auto[603979776:671088639]>               0          1          2    ZERO                 
+            bin <*,auto[536870912:603979775]>               0          1          2    ZERO                 
+            bin <*,auto[469762048:536870911]>               0          1          2    ZERO                 
+            bin <*,auto[402653184:469762047]>               0          1          2    ZERO                 
+            bin <*,auto[335544320:402653183]>               0          1          2    ZERO                 
+            bin <*,auto[268435456:335544319]>               0          1          2    ZERO                 
+            bin <*,auto[201326592:268435455]>               0          1          2    ZERO                 
+            bin <*,auto[134217728:201326591]>               0          1          2    ZERO                 
+            bin <*,auto[67108864:134217727]>                0          1          2    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 50.52%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 54.54%
+

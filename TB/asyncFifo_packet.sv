@@ -13,7 +13,7 @@ class asyncFifo_packet extends uvm_sequence_item;
     typedef enum {WR, RD} op_type;
     rand op_type op;
 
-    constraint readWriteC {op dist {WR:= 50, RD:= 50}}
+    constraint readWriteC {op dist {WR:= 50, RD:= 50};}
 
     /*Constraint 2: To check the number of idle cycles between the read and write operations. 
 

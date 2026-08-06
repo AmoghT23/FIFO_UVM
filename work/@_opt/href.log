@@ -1,0 +1,37 @@
+BEGIN 3:asyncFifo_if:fast__2:work
+    winc :  1:asyncFifo_test_top:fast:work
+    rdata :  1:asyncFifo_test_top:fast:work
+    rempty :  1:asyncFifo_test_top:fast:work
+    wdata :  1:asyncFifo_test_top:fast:work
+    rinc :  1:asyncFifo_test_top:fast:work
+    wfull :  1:asyncFifo_test_top:fast:work
+END 
+BEGIN 3:asyncFifo_if:fast__3:work
+    rq2_wptr :  1:asyncFifo_top:fast:work 1:asyncFifo_rptr_empty:fast:work
+    wrst_n :  1:asyncFifo_wptr_full:fast:work
+    wq2_rptr :  1:asyncFifo_top:fast:work 1:asyncFifo_wptr_full:fast:work
+    rptr :  1:asyncFifo_top:fast:work 1:asyncFifo_rptr_empty:fast:work
+    rempty :  1:asyncFifo_rptr_empty:fast:work
+    rinc :  1:asyncFifo_rptr_empty:fast:work
+    wdata :  1:asyncFifo_mem:fast:work
+    wfull :  1:asyncFifo_mem:fast:work 1:asyncFifo_wptr_full:fast:work
+    winc :  1:asyncFifo_wptr_full:fast:work
+    rrst_n :  1:asyncFifo_rptr_empty:fast:work
+    wclk :  1:asyncFifo_mem:fast:work 1:asyncFifo_wptr_full:fast:work
+    wclken :  1:asyncFifo_mem:fast:work
+    rdata :  1:asyncFifo_mem:fast:work
+    wptr :  1:asyncFifo_top:fast:work 1:asyncFifo_wptr_full:fast:work
+    rclk :  1:asyncFifo_rptr_empty:fast:work
+    waddr :  1:asyncFifo_mem:fast:work 1:asyncFifo_wptr_full:fast:work
+    raddr :  1:asyncFifo_mem:fast:work 1:asyncFifo_rptr_empty:fast:work
+END 
+BEGIN 3:asyncFifo_if:fast__1:work
+    wclk :  1:fp:fast:work
+    winc :  1:fp:fast:work
+    rinc :  1:fp:fast:work
+    rempty :  1:fp:fast:work
+    rclk :  1:fp:fast:work
+    rdata :  1:fp:fast:work
+    wdata :  1:fp:fast:work
+    wfull :  1:fp:fast:work
+END 

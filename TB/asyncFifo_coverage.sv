@@ -7,8 +7,8 @@ class asyncFifo_coverage extends uvm_subscriber #(asyncFifo_packet);
 
     covergroup cg;
         coverpoint pkt.op {
-            bins opRD = {RD};
-            bins opWR = {WR};
+            bins opRD = {asyncFifo_packet::RD};
+            bins opWR = {asyncFifo_packet::WR};
         }
 
         coverpoint pkt.idleCycles {
@@ -27,7 +27,7 @@ class asyncFifo_coverage extends uvm_subscriber #(asyncFifo_packet);
 
     function new(string name = "asyncFifo_coverage", uvm_component parent = null);
         super.new(name, parent);
-        
+       
         pkt = asyncFifo_packet::type_id::create("pkt");
         cg = new();
     endfunction //new()

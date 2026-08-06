@@ -33,10 +33,10 @@ wire [ADDR_W:0] wptr, rptr, wq2_rptr, rq2_wptr;
 asyncFifo_if #(DATA_W, ADDR_W) fifo_if (.*);
 
 // read pointer -> write clock domain, feeds wptr_full
-asyncFifo_2FF #(ADDR_W) sync_r2w (.i_clk(wclk), .i_rst_n(wrst_n), .i_ptr(rptr), .o_syncPtr(wq2_rptr));
+asyncFifo_2FF #(ADDR_W) sync_r2w (.i_clk(wclk), .i_rst_n(wrst_n), .i_ptr(fifo_if.rptr), .o_syncPtr(fifo_if.wq2_rptr));
 
 // write pointer -> read clock domain, feeds rptr_empty
-asyncFifo_2FF #(ADDR_W) sync_w2r (.i_clk(rclk), .i_rst_n(rrst_n),.i_ptr(wptr), .o_syncPtr(rq2_wptr));
+asyncFifo_2FF #(ADDR_W) sync_w2r (.i_clk(rclk), .i_rst_n(rrst_n), .i_ptr(fifo_if.wptr), .o_syncPtr(fifo_if.rq2_wptr));
 
 asyncFifo_mem fifo_mem (.f(fifo_if.fifoMem));
 

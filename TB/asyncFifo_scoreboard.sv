@@ -1,8 +1,6 @@
 class asyncFifo_scoreboard extends uvm_scoreboard ;
     `uvm_component_utils (asyncFifo_scoreboard)
 
-    import fp::*;
-
     //Define analysis TLM interface port 
     uvm_analysis_imp #(asyncFifo_packet, asyncFifo_scoreboard) scoreboard_port;
 
@@ -50,7 +48,7 @@ class asyncFifo_scoreboard extends uvm_scoreboard ;
     logic [DATA_W-1:0] expected_data;
     logic [DATA_W-1:0] actual_data;
 
-    if (curr_trans.op == WR) begin
+    if (curr_trans.op == asyncFifo_packet::WR) begin
         golden_q.push_back(curr_trans.data);
         `uvm_info("[AFIFO-SCB]", $sformatf("Write recorded: data=%0h", curr_trans.data), UVM_HIGH);
     end
